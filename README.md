@@ -1,6 +1,6 @@
 # jSRS
 
-Disclaimer: Currently a work in progress, MVP planned for June 31st.
+Disclaimer: Currently a work in progress, MVP planned for June 30th.
 
 ## Description
 
