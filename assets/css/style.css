@@ -1,0 +1,65 @@
+/* Global Styles */
+
+:root {
+    --main: #fff;
+    --secondary: #212529;
+
+    --main-font: Arial, Helvetica, sans-serif;
+}
+
+.light {
+    --main: #212529;
+    --secondary: #fff;
+}
+
+::selection { 
+    background-color: var(--secondary);
+    color: var(--main);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    -webkit-transition: all 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+         -o-transition: all 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+            transition: all 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* End Global Styles */
+
+body {
+    align-items: center;
+    background-color: var(--secondary);
+    color: var(--main);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+    gap: 1rem;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+button {
+    font-size: 1rem;
+    background-color: var(--secondary);
+    border: 0.125em solid var(--main);
+    border-radius: 0.125em;
+    color: var(--main);
+    padding: 0.5em;
+}
+
+button:hover {
+    background-color: var(--main);
+    color: var(--secondary);
+    cursor: pointer;
+}
